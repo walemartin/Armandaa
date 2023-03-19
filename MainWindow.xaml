@@ -1,0 +1,31 @@
+﻿<Window x:Class="Armandaa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Armandaa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+
+
+        <TextBox x:Name="inputTextBox2" HorizontalAlignment="Center" Margin="0,168,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="324" Height="49"/>
+        <Button x:Name="GoLive" Content="Go Live" HorizontalAlignment="Left" Margin="238,222,0,0" VerticalAlignment="Top" Background="#FFF81C0D" Foreground="#FFFCFBFB" Width="162" Height="39" Click="GoLive_Click"/>
+        <Button x:Name="MonitorScreenBtnClose" Content="Close" HorizontalAlignment="Left" Margin="414,222,0,0" VerticalAlignment="Top" Background="#FFF0E257" FontWeight="Bold" Width="148" Height="39" Click="MonitorScreenCloseBtn"/>
+        <Button x:Name="Start_Timer" Content="Countdown" HorizontalAlignment="Left" Margin="330,374,0,0" VerticalAlignment="Top" Height="32" Width="104" FontWeight="Bold" Click="Start_Timer_Click"/>
+        <Label x:Name="timeTextBlock" Content="" HorizontalAlignment="Left" Margin="238,297,0,0" VerticalAlignment="Top" Height="45" RenderTransformOrigin="0.5,0.5" Width="133">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="responseTextBlock" Content="" HorizontalAlignment="Left" Margin="414,297,0,0" VerticalAlignment="Top" Height="45" Width="148"/>
+        <TextBox x:Name="TxtTimer" HorizontalAlignment="Left" Margin="184,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="32"/>
+        <Button x:Name="StopBtnTimer" Content="Stop" HorizontalAlignment="Left" Margin="464,374,0,0" VerticalAlignment="Top" Click="StopBtnTimer_Click" Height="32" Width="61"/>
+    </Grid>
+</Window>
